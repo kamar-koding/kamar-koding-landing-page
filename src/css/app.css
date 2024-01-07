@@ -1,0 +1,105 @@
+/* ! CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ! Main CSS Code */
+.main-wrapper {
+    margin-top: 8rem;
+}
+
+.main-wrapper .main-wrapper-left h4,p {
+    margin-top: 5rem;
+}
+
+.github-username,.email-address {
+    width: 80% !important;
+}
+
+.github-username input::placeholder,.email-address input::placeholder {
+    color: #ffffff98;
+}
+
+.caution-text {
+    font-size: .7rem !important;
+}
+
+@media screen and (max-width: 988px) {
+	.main-wrapper .main-wrapper-row-1 {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.main-wrapper .main-wrapper-row-1 .main-wrapper-left h4,p {
+		text-align: center;
+	}
+
+	.main-wrapper .main-wrapper-row-1 .main-wrapper-left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.main-wrapper .main-wrapper-row-1 .main-wrapper-right {
+		display: flex;
+		justify-content: center;
+	}
+
+	.github-username,.email-address {
+		width: 100% !important;
+	}
+
+	.email-address .email {
+		flex-basis: 94% !important;
+	}
+
+	.btn-custom {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 731px) {
+	.email-address .email {
+		flex-basis: 75% !important;
+	}
+}
