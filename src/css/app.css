@@ -64,6 +64,40 @@ table {
     font-size: .7rem !important;
 }
 
+.project-header a,.article-header a {
+	text-decoration: none;
+}
+
+.article-wrapper .row .col-sm-5 .card .card-body .detail-article {
+	font-size: .7rem;
+}
+
+.article-wrapper .row .col-sm-5 .card .card-body .article-desc {
+	font-size: .8rem;
+} 
+
+footer {
+	background-color: #2b2b2ba9;
+}
+
+footer .container .row .col-lg-3 p {
+	font-size: .8rem;
+}
+
+footer .container .row .col-lg-3 p a {
+	color: #fff;
+}
+
+footer .container .row .col-6 a {
+	font-size: 1.1rem;
+	color: #fff;
+	transition: color linear .1s;
+}
+
+footer .container .row .col-6 a:hover {	
+	color: #706f6f;
+}
+
 @media screen and (max-width: 988px) {
 	.main-wrapper .main-wrapper-row-1 {
 		display: flex;
@@ -96,6 +130,18 @@ table {
 	.btn-custom {
 		width: 100%;
 	}
+
+	footer .container .row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer .container .row .col-6 {
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0 !important;
+	}
+
 }
 
 @media screen and (max-width: 731px) {
